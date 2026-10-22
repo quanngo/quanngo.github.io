@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ngo Nguyen Minh Quan — Senior Software Engineer</title>
+  <meta name="description" content="Senior Software Engineer with 8+ years building high-concurrency distributed systems in Go and Java.">
+  <meta property="og:title" content="Ngo Nguyen Minh Quan — Senior Software Engineer">
+  <meta property="og:description" content="Go · Java · Microservices · Distributed Systems · Ho Chi Minh City, Vietnam">
+  <meta property="og:image" content="assets/img/profile-beach.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo"><span class="mono">&lt;</span>MQ<span class="mono">/&gt;</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn lang-btn mono" id="langToggle" aria-label="Switch language">VI</button>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+          <svg class="sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow mono"><span class="dot"></span> <span data-i18n="eyebrow">Open to Senior Software Engineer roles</span></p>
+          <h1>Ngo Nguyen<br><span class="grad">Minh Quan</span></h1>
+          <p class="role mono" id="typed">Senior Software Engineer</p>
+          <p class="lead" data-i18n="heroLead">
+            8+ years designing and scaling <strong>high-concurrency distributed systems</strong> in Go and Java —
+            from telesales platforms serving 1,000+ active users to low-latency trading bots on global exchanges.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary" data-i18n="ctaContact">Get in touch</a>
+            <a href="#experience" class="btn btn-ghost" data-i18n="ctaExperience">View experience</a>
+            <button class="btn btn-ghost" onclick="window.print()" data-i18n="ctaCv">Download CV</button>
+          </div>
+          <ul class="hero-meta">
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="location">Ho Chi Minh City, Vietnam</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <a href="mailto:ngonguyenminhquan@gmail.com">ngonguyenminhquan@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="assets/img/profile-beach.jpg" alt="Portrait of Ngo Nguyen Minh Quan" width="1536" height="2048">
+          </div>
+          <div class="code-card mono" aria-hidden="true">
+            <div class="code-dots"><i></i><i></i><i></i></div>
+<pre><span class="k">type</span> <span class="t">Engineer</span> <span class="k">struct</span> {
+  Name  <span class="t">string</span> <span class="c">// "Minh Quan"</span>
+  Stack []<span class="t">string</span> <span class="c">// Go, Java</span>
+  Years <span class="t">int</span>    <span class="c">// 8+</span>
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat"><span class="num" data-count="8">0</span><span class="suffix">+</span><p data-i18n="statYears">Years of experience</p></div>
+        <div class="stat"><span class="num" data-count="1000">0</span><span class="suffix">+</span><p data-i18n="statUsers">Active users supported</p></div>
+        <div class="stat"><span class="num" data-count="20000">0</span><span class="suffix">+</span><p data-i18n="statLeads">Leads processed</p></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          <img src="assets/img/profile-city.jpg" alt="Ngo Nguyen Minh Quan" loading="lazy" width="1536" height="2048">
+        </div>
+        <div class="about-text reveal">
+          <p class="section-tag mono" data-i18n="aboutTag">01. About me</p>
+          <h2 data-i18n="aboutTitle">Building systems that stay fast when traffic doesn't stay calm.</h2>
+          <p data-i18n="aboutP1">
+            I'm a Senior Software Engineer based in Ho Chi Minh City; most recently I also served as Solutions Architect at NEYU.
+            Over the past eight years I've designed backend platforms in <strong>Golang</strong> and <strong>Java</strong>
+            for telesales, workforce management, logistics, fintech trading and enterprise ERP.
+          </p>
+          <p data-i18n="aboutP2">
+            My focus is the hard parts of distributed systems: <strong>messaging, caching, database optimization,
+            observability and reliability</strong>. I've also been the technical lead for backend teams — setting
+            architecture standards, running code reviews and sprint planning.
+          </p>
+          <ul class="about-list">
+            <li data-i18n="about1">Microservices &amp; event-driven architecture</li>
+            <li data-i18n="about2">gRPC, REST &amp; WebSocket APIs</li>
+            <li data-i18n="about3">Kafka / RabbitMQ pipelines</li>
+            <li data-i18n="about4">Redis multi-tier caching</li>
+            <li data-i18n="about5">Jaeger distributed tracing</li>
+            <li data-i18n="about6">Technical leadership &amp; code review</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <p class="section-tag mono reveal" data-i18n="skillsTag">02. Technical core</p>
+        <h2 class="reveal" data-i18n="skillsTitle">Tools I build with</h2>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+            </div>
+            <h3 data-i18n="skLang">Languages &amp; Frameworks</h3>
+            <ul class="chips"><li>Go</li><li>Java</li><li>Spring</li><li>Gin</li><li>Axelor</li><li>C#</li><li>React Native</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="8" height="6" rx="1"/><rect x="14" y="3" width="8" height="6" rx="1"/><rect x="8" y="15" width="8" height="6" rx="1"/><path d="M6 9v3h12V9M12 12v3"/></svg>
+            </div>
+            <h3 data-i18n="skArch">Architecture &amp; Infrastructure</h3>
+            <ul class="chips"><li>Microservices</li><li>Distributed Systems</li><li>RESTful API</li><li>WebSocket</li><li>gRPC</li><li>Docker</li><li>Nginx</li><li>Load Balancing</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+            </div>
+            <h3 data-i18n="skData">Databases &amp; Messaging</h3>
+            <ul class="chips"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>SQL Server</li><li>Redis</li><li>Kafka</li><li>RabbitMQ</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+            </div>
+            <h3 data-i18n="skOps">DevOps &amp; Best Practices</h3>
+            <ul class="chips"><li>Jaeger / OpenTracing</li><li>Quartz Scheduler</li><li>CI/CD</li><li>Kibana</li><li>OOP</li><li>Design Patterns</li><li>Code Reviews</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <p class="section-tag mono reveal" data-i18n="expTag">03. Experience</p>
+        <h2 class="reveal" data-i18n="expTitle">Where I've worked</h2>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <div class="tl-marker"></div>
+            <div class="tl-card">
+              <header class="tl-head">
+                <div>
+                  <h3>Senior Software Engineer / Solutions Architect</h3>
+                  <p class="company">NEYU <span data-i18n="hcmc">· Ho Chi Minh City</span></p>
+                </div>
+                <span class="date mono">01/2024 — 11/2026</span>
+              </header>
+              <ul class="bullets">
+                <li data-i18n="j1b1">Architected and deployed a highly scalable <strong>Telesale Management System (TMS)</strong> on microservices, supporting <strong>1,000+ active users</strong> and processing <strong>20,000+ incoming leads</strong>.</li>
+                <li data-i18n="j1b2">Designed the <strong>Workforce Management (WFM)</strong> platform with real-time message routing and API exchange with TMS to optimize staff scheduling and operational efficiency.</li>
+                <li data-i18n="j1b3">Led multi-carrier third-party integrations (<strong>J&amp;T, Amilo, Flash, Pinelabs, QuadX</strong>) for automated real-time delivery tracking and payment synchronization.</li>
+                <li data-i18n="j1b4">Customized an automated <strong>Delegation of Authority (DOA)</strong> governance system on the Axelor open-source ERP framework with SMTP notification triggers.</li>
+              </ul>
+              <ul class="chips small"><li>Go</li><li>Java</li><li>gRPC</li><li>PostgreSQL</li><li>Redis</li><li>Message Queue</li><li>WebSocket</li><li>Nginx</li><li>Docker</li><li>Cron</li></ul>
+            </div>
+          </li>
+
+          <li class="tl-item reveal">
+            <div class="tl-marker"></div>
+            <div class="tl-card">
+              <header class="tl-head">
+                <div>
+                  <h3>Backend Team Leader</h3>
+                  <p class="company">FINEDGE COMPANY <span data-i18n="hcmc">· Ho Chi Minh City</span></p>
+                </div>
+                <span class="date mono">10/2022 — 12/2023</span>
+              </header>
+              <ul class="bullets">
+                <li data-i18n="j2b1">Tech lead for a team of <strong>5 backend developers</strong>; set architecture standards, ran rigorous code reviews and sprint planning for a high-frequency automated trading platform (<strong>Trade Bot</strong>).</li>
+                <li data-i18n="j2b2">Engineered secure, <strong>low-latency Golang microservices</strong> using gRPC for inter-service calls, message queues for async tasks and cron jobs for scheduled trades.</li>
+                <li data-i18n="j2b3">Hardened security and fault tolerance with <strong>RSA request-body hashing</strong>, Nginx load balancing, Docker and multi-tier Redis caching.</li>
+                <li data-i18n="j2b4">Integrated real-time live trading APIs across <strong>Binance, BingX and XTB</strong> with zero-downtime execution.</li>
+              </ul>
+              <ul class="chips small"><li>Go</li><li>gRPC</li><li>MySQL</li><li>Redis</li><li>RSA</li><li>WebSocket</li><li>Nginx</li><li>Docker</li></ul>
+            </div>
+          </li>
+
+          <li class="tl-item reveal">
+            <div class="tl-marker"></div>
+            <div class="tl-card">
+              <header class="tl-head">
+                <div>
+                  <h3>Senior Backend Engineer</h3>
+                  <p class="company">ISMART COMPANY <span data-i18n="hcmc">· Ho Chi Minh City</span></p>
+                </div>
+                <span class="date mono">05/2021 — 10/2022</span>
+              </header>
+              <ul class="bullets">
+                <li data-i18n="j3b1">Developed the <strong>Back-Office (BO)</strong> management system for user account administration and affiliate tracking.</li>
+                <li data-i18n="j3b2">Optimized asynchronous <strong>message-queue pipelines</strong> handling spikes of thousands of simultaneous member registrations and system broadcasts.</li>
+                <li data-i18n="j3b3">Implemented <strong>Jaeger OpenTracing</strong> across Golang microservices to proactively find bottlenecks and improve observability.</li>
+              </ul>
+              <ul class="chips small"><li>Go</li><li>gRPC</li><li>Jaeger</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>Alibaba OSS</li></ul>
+            </div>
+          </li>
+
+          <li class="tl-item reveal">
+            <div class="tl-marker"></div>
+            <div class="tl-card">
+              <header class="tl-head">
+                <div>
+                  <h3>Software Engineer</h3>
+                  <p class="company">FPT TELECOM <span data-i18n="hcmc">· Ho Chi Minh City</span></p>
+                </div>
+                <span class="date mono">12/2018 — 04/2021</span>
+              </header>
+              <ul class="bullets">
+                <li data-i18n="j4b1">Technical lead for cross-functional teams of <strong>3–4 engineers</strong> delivering enterprise ERP platforms (FPT Member, FTI) for internet contracts, identity verification and fee collection.</li>
+                <li data-i18n="j4b2">Co-engineered the <strong>FPT Education ERP portal &amp; mobile app (EFox)</strong>, automating academic processing and digital library services.</li>
+                <li data-i18n="j4b3">Architected shared session storage with <strong>Redis</strong>, centralized log analytics with <strong>Kafka &amp; Kibana</strong>, and recurring jobs with Quartz Scheduler.</li>
+              </ul>
+              <ul class="chips small"><li>C#</li><li>React Native</li><li>Go</li><li>Redis</li><li>Kafka</li><li>Kibana</li><li>Quartz</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <p class="section-tag mono reveal" data-i18n="projTag">04. Featured systems</p>
+        <h2 class="reveal" data-i18n="projTitle">Things I've architected</h2>
+        <div class="projects-grid">
+          <article class="project reveal">
+            <div class="project-top"><span class="mono">NEYU</span><span class="badge">Microservices</span></div>
+            <h3 data-i18n="p1Title">Telesale Management System</h3>
+            <p data-i18n="p1Desc">Scalable microservices platform for telesales operations, built for 1,000+ active users and a 20,000+ lead pipeline.</p>
+            <ul class="chips small"><li>Go</li><li>gRPC</li><li>PostgreSQL</li><li>Redis</li></ul>
+          </article>
+          <article class="project reveal">
+            <div class="project-top"><span class="mono">NEYU</span><span class="badge">Real-time</span></div>
+            <h3 data-i18n="p2Title">Workforce Management</h3>
+            <p data-i18n="p2Desc">Staff scheduling platform with real-time message routing and API exchange with TMS for operational efficiency.</p>
+            <ul class="chips small"><li>Go</li><li>WebSocket</li><li>Message Queue</li></ul>
+          </article>
+          <article class="project reveal">
+            <div class="project-top"><span class="mono">FINEDGE</span><span class="badge">Fintech</span></div>
+            <h3>Trade Bot</h3>
+            <p data-i18n="p3Desc">High-frequency automated trading across Binance, BingX and XTB with secure, low-latency services and zero-downtime execution.</p>
+            <ul class="chips small"><li>Go</li><li>gRPC</li><li>RSA</li><li>Redis</li></ul>
+          </article>
+          <article class="project reveal">
+            <div class="project-top"><span class="mono">NEYU</span><span class="badge">Integrations</span></div>
+            <h3 data-i18n="p4Title">Multi-carrier Logistics Hub</h3>
+            <p data-i18n="p4Desc">Unified integration layer for J&amp;T, Amilo, Flash, Pinelabs and QuadX — real-time delivery tracking and payment sync.</p>
+            <ul class="chips small"><li>REST</li><li>Cron</li><li>Go</li></ul>
+          </article>
+          <article class="project reveal">
+            <div class="project-top"><span class="mono">ISMART</span><span class="badge">Observability</span></div>
+            <h3 data-i18n="p5Title">Back-Office &amp; Tracing</h3>
+            <p data-i18n="p5Desc">Account and affiliate back-office with queue pipelines for registration spikes, instrumented end-to-end with Jaeger.</p>
+            <ul class="chips small"><li>Go</li><li>Jaeger</li><li>PostgreSQL</li></ul>
+          </article>
+          <article class="project reveal">
+            <div class="project-top"><span class="mono">FPT</span><span class="badge">Enterprise</span></div>
+            <h3>FPT Member &amp; EFox ERP</h3>
+            <p data-i18n="p6Desc">Enterprise ERP for internet contracts and fee collection, plus an education portal and mobile app for academic services.</p>
+            <ul class="chips small"><li>C#</li><li>React Native</li><li>Kafka</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <p class="section-tag mono reveal" data-i18n="eduTag">05. Education</p>
+        <div class="edu-card reveal">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="eduSchool">Van Lang University</h3>
+            <p data-i18n="eduDegree">Bachelor of Science in Information Technology · Ho Chi Minh City</p>
+          </div>
+          <span class="date mono">2015 — 2019</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner reveal">
+        <p class="section-tag mono" data-i18n="contactTag">06. What's next?</p>
+        <h2 data-i18n="contactTitle">Let's build something reliable.</h2>
+        <p class="lead" data-i18n="contactLead">I'm open to Senior Software Engineer and Senior Backend roles. Whether you have a position or just want to talk distributed systems, my inbox is open.</p>
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:ngonguyenminhquan@gmail.com">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span>ngonguyenminhquan@gmail.com</span>
+          </a>
+          <a class="contact-item" href="https://linkedin.com/in/ngo-nguyen-minh-quan" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            <span>linkedin.com/in/ngo-nguyen-minh-quan</span>
+          </a>
+        </div>
+        <a href="mailto:ngonguyenminhquan@gmail.com" class="btn btn-primary btn-lg" data-i18n="contactBtn">Say hello</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="mono">© <span id="year"></span> Ngo Nguyen Minh Quan · <span data-i18n="footer">Built with HTML, CSS &amp; a bit of JS</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
